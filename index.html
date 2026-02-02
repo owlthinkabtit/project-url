@@ -16,39 +16,53 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-   <div id="root">
-    <div class="App">
-      <nav>
-        <div class="nav_container">
-          <a href="/"><img class="logo" src="./images/logo.svg"/></a>
-          <ul class="nav_links">
-            <a href="">Features</a>
-            <a href="">Pricing</a>
-            <a href="">Resources</a>
-          </ul>
-        </div>
-        <div class="login">
-          <button>Login</button>
-          <button>Sign Up</button>
-        </div>
-      </nav>
-      <section id="landing">
-        <header>
-          <div class="header_container">
-            <div class="header-para">
-              <h1>More than just shorter links</h1>
-              <h2>Build your brand's recognition and get detailed insights on how your links are performing.</h2>
-              <a href="">
-                <button class="btn">Get Started</button>
-              </a>
-            </div>
-            <figure class="header-img_container">
-              <img src="./images/illustration-working.svg" />
-            </figure>
+    <div id="root">
+      <div class="App">
+        <nav>
+          <div class="nav_container">
+            <a href="/"><img class="logo" src="./images/logo.svg" /></a>
+            <ul class="nav_links">
+              <a href="">Features</a>
+              <a href="">Pricing</a>
+              <a href="">Resources</a>
+            </ul>
           </div>
-        </header>
-      </section>
+          <div class="login">
+            <button class="btn-1">Login</button>
+            <button class="btn-2">Sign Up</button>
+          </div>
+        </nav>
+        <section id="landing">
+          <header>
+            <div class="header_container">
+              <div class="header-para">
+                <h1>More than just shorter links</h1>
+                <p>
+                  Build your brand's recognition and get detailed 
+                  <br>insights on how your links are performing.
+                </p>
+                <a href="">
+                  <button class="btn-3">Get Started</button>
+                </a>
+              </div>
+              <figure class="header-img_container">
+                <img src="./images/illustration-working.svg" />
+              </figure>
+            </div>
+          </header>
+          <div class="shorten_container">
+            <form class="shorten-form" action="/search" method="get">
+              <input
+                type="search"
+                id="search"
+                name="q"
+                placeholder="Search..."
+              />
+              <button type="submit">Search</button>
+            </form>
+          </div>
+        </section>
+      </div>
     </div>
-   </div>
   </body>
 </html>
