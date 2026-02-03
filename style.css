@@ -180,3 +180,92 @@ button {
 .btn-copy.copied {
   background-color: var(--dark-violet);
 }
+
+/* Stats section */
+
+.stats-area {
+ background-color: #f0f1f6; 
+}
+
+.stats-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stats-intro p {
+  text-align: center;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.stats-intro h1 {
+  color: var(--dark-violet);
+  font-size: 35px;
+}
+
+.stats-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 80px;
+  position: relative;
+  padding: 0 20px;
+}
+
+.stats-card {
+  background-color: white;
+  padding: 70px 32px 40px;
+  border-radius: 5px;
+  flex: 1;
+  position: relative;
+  height: fit-content;
+}
+
+.stats-card p {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.stats-card:nth-child(2) {
+  transform: translateY(44px);
+}
+
+.stats-card:nth-child(3) {
+  transform: translateY(88px);
+}
+
+.card-icon {
+  background-color: var(--dark-violet);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -40px;
+  left: 32px;
+}
+
+.card-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.stats-card-container::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 8px;
+  background-color: var(--cyan);
+  top: 50%;
+  left: 250px;
+  z-index: 0;
+}
+
+/* footer */
+
+
