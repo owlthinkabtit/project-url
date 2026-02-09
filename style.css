@@ -267,5 +267,27 @@ button {
 }
 
 /* footer */
+.boost {
+  background-color: var(--dark-violet);
+  background-image: url('./images/bg-boost-desktop.svg');
+  background-size: cover;
+}
 
+ .boost-container {
+  padding: 56px 0;
+ }
+
+ .boost-container h1{
+  color: white;
+ }
+
+ .boost-row{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 24px;
+  width: 100%;
+ }
 
