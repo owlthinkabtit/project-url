@@ -130,12 +130,14 @@ button {
   background-size: cover;
   border-radius: 10px;
   padding: 50px;
-  margin-bottom: 20px;
+  margin-top: -80px;
+  position: relative;
 }
 
 .shorten-form {
   display: flex;
   gap: 20px;
+  align-items: flex-start;
 }
 
 .shorten-form input {
@@ -143,6 +145,41 @@ button {
   padding: 15px 25px;
   border-radius: 10px;
   border: none;
+}
+
+.input-control {
+  flex: 1;
+  position: relative;
+}
+
+.input-control input{
+  width: 100%;
+  padding: 14px 32px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.error-msg {
+  display: none;
+  color: var(--red);
+  font-style: italic;
+  font-size: 14px;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+}
+
+.input-control.error input{
+  border: 3px solid var(--red);
+}
+
+.input-control.error .error-msg{
+  display: block;
+}
+
+.input-control.error input::placeholder {
+  color: var(--red);
 }
 
 .link-card {
@@ -185,6 +222,8 @@ button {
 
 .stats-area {
  background-color: #f0f1f6; 
+ /* padding-top: 100px; */
+ padding-bottom: 200px;
 }
 
 .stats-intro {
@@ -291,3 +330,120 @@ button {
   width: 100%;
  }
 
+.footer {
+  background-color: #232127;
+  color: white;
+  padding: 50px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo h2{
+  font-size: 32px;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-col h4{
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.footer-col ul{
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li{
+  margin-bottom: 10px;
+}
+
+.footer-col a{
+  color: #bfbfbf;
+  text-decoration: none;
+  
+}
+
+.footer-col a:hover{
+  color: var(--cyan);
+  transition: 0.5s ease-in;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials img{
+  width: 24px;
+}
+
+.footer-social a:hover svg {
+  fill: hsl(180, 66%, 49%); 
+}
+
+@media (max-width: 768px) {
+  /* hero hamburger */
+  #hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  /* shorten */
+  .shorten_container {
+    flex-direction: column;
+    padding: 24px;
+    margin-top: -80px; 
+    gap: 30px;
+  }
+
+  /* Stack Stats Cards */
+  .stats-card-container {
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .stats-card {
+    text-align: center;
+    transform: translateY(0) !important;
+  }
+
+  .card-icon {
+    left: 50%;
+    transform: translateX(-50%); 
+    top: -35px;
+  }
+
+  /* vertical blue line */
+  .stats-card-container::before {
+    width: 8px;
+    height: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+
+  /* footer */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

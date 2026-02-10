@@ -47,8 +47,11 @@
       <section id="shorten-area">
         <div class="container">
           <div class="shorten_container">
-            <form class="shorten-form" id="url-form">
-              <input type="text" placeholder="Shorten a link here..." />
+            <form class="shorten-form">
+              <div class="input-control">
+                <input type="text" placeholder="Shorten a link here..." />
+                <span class="error-msg">Please add a link</span>
+              </div>
               <button type="submit" class="btn-cyan">Shorten It!</button>
             </form>
           </div>
@@ -101,6 +104,37 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>Shortly</h2>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Features</h4>
+            <ul>
+              <li><a href="/">Link Shortening</a></li>
+              <li><a href="/">Branded Links</a></li>
+              <li><a href="/">Analytics</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="/">Blog</a></li>
+              <li><a href="/">Developers</a></li>
+              <li><a href="/">Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-socials">
+          <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="./images/icon-pinterest.svg" alt="Pinterest"></a>
+          <a href="#"><img src="./images/icon-instagram.svg" alt="Instagram"></a>
+        </div>
+      </div>
+    </footer>
     <script src="./script.js" defer></script>
   </body>
 </html>

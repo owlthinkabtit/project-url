@@ -8,12 +8,14 @@ shortenBtn.addEventListener('click', function (event) {
   event.preventDefault();
 
   const urlToShorten = urlInput.value;
+  const inputParent = urlInput.parentElement;
 
   if (urlToShorten === "") {
-    alert("Please enter a link first!");
+    inputParent.classList.add('error');
     return;
+  } else {
+    inputParent.classList.remove('error');
   }
-  console.log("button clicked! We are shortening:", urlToShorten);
 
   shortenLink(urlToShorten);
 });
