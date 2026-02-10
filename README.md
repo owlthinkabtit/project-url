@@ -3,7 +3,7 @@
 
 For this cumulative assessment on HTML, CSS, and JavaScript, I chose the Frontend Mentor URL Shortening API Landing Page project as my subject.
 
-[LIVE DEMO]: https://project-url-zeta.vercel.app/
+LIVE DEMO: https://project-url-zeta.vercel.app/
 ---
 ## Reflection
 `Write a 200-300 word reflection discussing your development process, challenges faced, solutions implemented, and potential improvements.`
